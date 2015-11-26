@@ -30,6 +30,13 @@ local.properties
 
 
 #################
+## IntelliJ
+#################
+
+## Ignore IntelliJ config file
+.idea
+
+#################
 ## Visual Studio
 #################
 
