@@ -2,9 +2,23 @@
 # this script installs the puppet modules we need, 
 #and tries to do tricks with setting local repository for ubuntu updates
 
+# apt-get Update
+sudo apt-get update
+
 # Install wget
 
 sudo apt-get install -qy wget;
+
+#Install LAMP
+
+#sudo apt-get install -qy apache2
+#sudo apt-get install -qy mysql-server mysql-client
+#sudo apt-get install -qy php5 php5-common
+#sudo apt-get install -qy libapache2-mod-php5
+#sudo apt-get install -qy php5-mysql
+
+#sudo /etc/init.d/apache2 restart
+#sudo /etc/init.d/mysql restart
 
 sed -e '/templatedir/ s/^#*/#/' -i.back /etc/puppet/puppet.conf
 
